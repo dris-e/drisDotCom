@@ -21,6 +21,7 @@ html, body {
     color: black;
     text-align: center;
     transition: font-size 2s, color 0.3s, left, 1.5s;
+    padding: -100%;
 }
 
 #pointer {
@@ -29,4 +30,14 @@ html, body {
     background-color: white;
     border-radius: 50%;
     position: absolute;
-  }
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#alt-text {
+    font-size: 300px;
+    left: 25%;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
