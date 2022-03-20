@@ -1,4 +1,32 @@
 html, body {
     width: 100vw;
     height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    cursor: none;
 }
+
+.background {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    transition: background-color 0.5s;
+}
+
+.text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+    transition: font-size 2s, color 0.3s, left, 1.5s;
+}
+
+#pointer {
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+  }
