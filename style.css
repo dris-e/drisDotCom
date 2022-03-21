@@ -52,7 +52,7 @@ html, body {
     background-color: #0492C2;
     float: right;
     position: absolute;
-    transform: rotateZ(180);
+    transform: rotateZ(180deg);
     transition: width 1.5s;
 }
 
