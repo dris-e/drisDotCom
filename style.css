@@ -51,15 +51,6 @@ html, body {
     z-index: 0;
     background-color: blue;
     float: right;
-    left: 50%;
     position: absolute;
     transition: width 1.25s;
-}
-
-.container {
-    opacity: 0.3;
-    background-color: green;
-    height: 100%;
-    width: 30%;
-    left: 50%;
 }
