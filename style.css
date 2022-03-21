@@ -55,3 +55,18 @@ html, body {
     position: absolute;
     transition: width 1.5s;
 }
+
+.container {
+    position: absolute;
+    display: inline-grid;
+    width: 50%;
+    height: 100vh;
+    left: 50%;
+}
+
+.object {
+    background-color: green;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+}
