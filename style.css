@@ -48,7 +48,6 @@ html, body {
 #background-accent {
     height: 100;
     width: 0%;
-    left: 50%;
     z-index: 0;
     background-color: #0492C2;
     float: right;
