@@ -11,6 +11,8 @@ function animations() {
         titleText.innerHTML = "drıs";
     }, 1250);
     setTimeout(function() {
+        var accent = document.getElementById("background-accent");
+        accent.style.width = "50%";
         titleText.style.left = "25%";
     }, 1500);
     setTimeout(function() {
