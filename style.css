@@ -56,7 +56,7 @@ html, body {
     transition: width 1.5s;
 }
 
-.container {
+/* .container {
     position: absolute;
     display: inline-grid;
     width: 50%;
@@ -69,4 +69,4 @@ html, body {
     width: 30%;
     height: 30%;
     position: absolute;
-}
+} */
