@@ -29,6 +29,7 @@ function animations() {
         collisions(dot, altText, pointerEvent);
     }
     window.addEventListener('mousemove', moveCursor);
+
 }
 
 function collisions(pointer, text, event) {
