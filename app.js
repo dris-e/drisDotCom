@@ -17,7 +17,6 @@ function animations() {
     }, 1500);
     setTimeout(function() {
         dot.style.opacity = "1";
-        dot.style.transform = "translate3d(450px, 500px, 0)";
         pointerEvent = true;
     }, 3000)
 
@@ -30,6 +29,7 @@ function animations() {
         collisions(dot, altText, pointerEvent);
     }
     window.addEventListener('mousemove', moveCursor);
+
 }
 
 function collisions(pointer, text, event) {
@@ -48,5 +48,3 @@ function collisions(pointer, text, event) {
         }
     }
 }
-
-//change from this function to mouseover event
