@@ -11,10 +11,13 @@ function animations() {
         titleText.innerHTML = "drıs";
     }, 1250);
     setTimeout(function() {
+        var accent = document.getElementById("background-accent");
+        accent.style.width = "50%";
         titleText.style.left = "25%";
     }, 1500);
     setTimeout(function() {
         dot.style.opacity = "1";
+        dot.style.transform = "translate3d(450px, 500px, 0)";
         pointerEvent = true;
     }, 3000)
 
@@ -46,3 +49,4 @@ function collisions(pointer, text, event) {
     }
 }
 
+//change from this function to mouseover event

@@ -11,6 +11,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     transition: background-color 0.5s;
+    z-index: -1;
 }
 
 .text {
@@ -22,6 +23,7 @@ html, body {
     text-align: center;
     transition: font-size 2s, color 0.3s, left, 1.5s;
     padding: -100%;
+    z-index: 1;
 }
 
 #pointer {
@@ -29,6 +31,7 @@ html, body {
     width: 45px;
     background-color: white;
     border-radius: 50%;
+    z-index: 10;
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s;
@@ -40,4 +43,35 @@ html, body {
     color: white;
     opacity: 0;
     transition: opacity 0.5s;
+}
+
+#background-accent {
+    background-color: #1898B4;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    z-index: 0;
+    float: right;
+    transition: width 1.25s;
+}
+
+.box {
+    position: absolute;
+    height: 35%;
+    width: 30%;
+    color: white;
+    border: 7px white;
+    border-radius: 20px;
+    border-style: solid;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 5% 0% 5% 0%;
+}
+
+#start-box {
+    left: 80%;
+    top: 45%;
+    transform: translate(-50%, -50%);
 }
