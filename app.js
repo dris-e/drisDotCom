@@ -1,7 +1,7 @@
 function animations() {
     var altText = document.getElementById("alt-text");
     var titleText = document.getElementById("title-text");
-    titleText.style.fontSize = "300px";
+    titleText.style.fontSize = "1750%";
     setTimeout(function() {
         var background = document.getElementById("background-main");
         background.style.backgroundColor = "black";
@@ -47,4 +47,9 @@ function collisions(pointer, text, event) {
             text.style.opacity = "1";
         }
     }
+}
+
+function moveAlt() {
+    var accent = document.getElementById("background-accent");
+    accent.style.left = "95%";
 }
