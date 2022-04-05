@@ -26,30 +26,37 @@ function animations() {
         var mouseY = e.clientY;
         var mouseX = e.clientX;
         dot.style.transform = "translate3d(" + mouseX + "px, " + mouseY + "px, 0)";
-        collisions(dot, altText, pointerEvent);
+        collisions(dot, altText, pointerEvent, 1);
+        var accent = document.getElementById("background-accent");
+        collisions(dot, accent, pointerEvent);
     }
     window.addEventListener('mousemove', moveCursor);
 
 }
 
-function collisions(pointer, text, event) {
+function collisions(pointer, text, event, type) {
     var elem1 = pointer.getBoundingClientRect();
     var elem2 = document.getElementById("title-text").getBoundingClientRect();
 
     if (event === true) {
         if (elem1.right < elem2.left || elem2.right < elem1.left || elem1.bottom < elem2.top || elem2.bottom < elem1.top) {
             console.log("not touching");
-            pointer.style.opacity = "1";
-            text.style.opacity = "0";
+            if (type === 1) {
+                pointer.style.opacity = "1";
+                text.style.opacity = "0";
+            } else {
+                pointer.style.opacity = "0.5";
+                text.style.width = "52.5%";
+            }
         } else {
             console.log("touching");
-            pointer.style.opacity = "0";
-            text.style.opacity = "1";
+            if (type === 1) {
+                pointer.style.opacity = "0";
+                text.style.opacity = "1";
+            } else {
+                pointer.style.opacity = "1";
+                text.style.width = "50%";
+            }
         }
     }
-}
-
-function moveAlt() {
-    var accent = document.getElementById("background-accent");
-    accent.style.left = "95%";
 }
