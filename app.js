@@ -1,4 +1,4 @@
-function animations() {
+/* function animations() {
     var altText = document.getElementById("alt-text");
     var titleText = document.getElementById("title-text");
     titleText.style.fontSize = "1750%";
@@ -59,4 +59,4 @@ function collisions(pointer, text, event, type) {
             }
         }
     }
-}
+} */
